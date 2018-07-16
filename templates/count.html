@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>counter</title></head>
+     <body>
+<h1>you entered the following data:</h1>
+{{ fulltext }}
+<h1>numbere of words in this data:</h1>{{count}}
+
+<br />
+<a href="{%url 'home'%}">START AGAIN</a>
+<h1>word count</h1>
+{%for word,counttotal in worddict%}
+
+{{word  }}
+<br />
+{{counttotal}}
+<br />
+{%endfor%}
+</body>
+</html>
